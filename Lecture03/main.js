@@ -1,14 +1,8 @@
-var Product = require('./Product');
-var RandomGenerator = require('./RandomGenerator');
+var products = require('../shared_modules/Products');
+var RandomGenerator = require('../shared_modules/RandomGenerator');
 var $ = require('jquery');
 
 var random = new RandomGenerator();
-
-var products = [
-    new Product('iPad Pro 9.7', 19900, false),
-    new Product('iPad Pro 12.9', 25900, true),
-    new Product('iPad', 13900, false)
-];
 
 $(function () {
     var $shoppingCart = $('#shoppingCart');
