@@ -1,5 +1,4 @@
-var products = require('../shared_modules/Products');
-
-products.forEach(function (product) {
-    console.log(product.price);
-})
+var people = ['geddy', 'neil', 'alex'];
+html = ejs.render('<%= people.join(", "); %>', {
+    people: people
+});
